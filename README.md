@@ -23,7 +23,8 @@ python -V
 ```
 Si tenemos instalados múltiples versiones de Python, cambiar la version por defecto:
 ```
-
+update-alternatives --install /usr/bin/python3 python3 /usr/bin/python3.10 1
+update-alternatives --install /usr/bin/python3 python3 /usr/bin/python3.11 2
 ```
 ## Comandos básicos PIP3
 Instalar PIP3:
@@ -36,7 +37,7 @@ pip3 --version
 ```
 ¿Cómo instalar paquetes?
 ```
-pip install PACKAGE_NAME
+pip3 install PACKAGE_NAME
 ```
 # Referencias
 Sintaxis de escritura y formato básicos
