@@ -2,16 +2,27 @@
 Repositorio de Python
 
 # Comandos básicos Sistema Operativo (Linux)
-Verificar que esta instalado Python
+Verificar que esta instalado Python 3
 
   python3 --version
   python3 -V
 
-  python -V # versiones anteriores
+Verificar que esta instalado Python (versiones anteriores)
+  python -V
+
+Se recomienda utilizar este comando antes de instalar programas o de actualizar el sistema.
+Actualizará todos los paquetes y y nuevas dependencias que tengamos instalados en nuestro equipo.
+  sudo apt update
+
+
 
 # PIP
-Instalar paquetes
+Verificar que esta instalado el gestor de paquetes para Python 3
 
-pip install PACKAGE_NAME
+  pip3 --version
+
+¿Cómo instalar paquetes?
+
+  pip install PACKAGE_NAME
 
 
