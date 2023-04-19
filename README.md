@@ -1,9 +1,9 @@
 # Repositorio Python
 Repositorio de Python
 
-## Sistema Operativo (Linux)
+# Sistema Operativo (Linux)
 
-# Comandos básicos Python
+## Comandos básicos Python
 Verificar que esta instalado Python3:
 
   python3 --version
@@ -19,7 +19,7 @@ Actualizará todos los paquetes y y nuevas dependencias que tengamos instalados 
 
   sudo apt update
 
-# Comandos básicos PIP
+## Comandos básicos PIP
 Verificar que esta instalado el gestor de paquetes para Python3:
 
   pip3 --version
