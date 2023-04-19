@@ -25,5 +25,3 @@ Verificar que esta instalado el gestor de paquetes para Python3:
 ¿Cómo instalar paquetes?
 
   pip install PACKAGE_NAME
-
-
