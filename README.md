@@ -11,6 +11,7 @@ Verificar que esta instalado Python
 
 # PIP
 Instalar paquetes
+
 pip install PACKAGE_NAME
 
 
