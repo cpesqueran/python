@@ -1,9 +1,9 @@
 # Repositorio Python
 Repositorio de Python
 
-# Sistema Operativo (Linux)
+#Sistema Operativo (Linux)
 
-# Comandos básicos Python
+## Comandos básicos Python
 Verificar que esta instalado Python3:
 
   python3 --version
