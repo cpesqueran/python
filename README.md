@@ -6,9 +6,8 @@ Repositorio de Python
 ## Comandos básicos Python
 Verificar que esta instalado Python3:
 
-  python3 --version
-  
-  python3 -V
+> python3 --version
+> python3 -V
 
 Verificar que esta instalado Python (versiones anteriores):
 
