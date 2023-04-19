@@ -17,10 +17,6 @@ Verificar que esta instalado Python3:
 python3 --version
 python3 -V
 ```
-Verificar que esta instalado Python (versiones anteriores):
-```
-python -V
-```
 Si tenemos instalados múltiples versiones de Python, cambiar la version por defecto:
 ```
 update-alternatives --install /usr/bin/python3 python3 /usr/bin/python3.10 1
