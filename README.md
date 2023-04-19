@@ -5,6 +5,7 @@ Repositorio de Python
 Verificar que esta instalado Python3:
 
   python3 --version
+  
   python3 -V
 
 Verificar que esta instalado Python (versiones anteriores):
