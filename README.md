@@ -1,7 +1,7 @@
 # Repositorio Python
 Repositorio de Python
 
-# Sistema Operativo (Linux)
+# Comando b{asicos de Sistema Operativo (Linux)
 Se recomienda utilizar este comando antes de instalar programas o de actualizar el sistema.
 Actualizará todos los paquetes y y nuevas dependencias que tengamos instalados en nuestro equipo:
 ```
