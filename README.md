@@ -20,9 +20,9 @@ sudo apt update
 sudo apt install python3.11
 ```
 Listar las versiones instaladas:
-´´´
+```
 ls -l /usr/bin/python*
-´´´
+```
 Si tenemos instalados múltiples versiones de Python, indicar la version por defecto:
 ```
 python3 --version
