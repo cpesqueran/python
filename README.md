@@ -7,20 +7,29 @@ Actualizará todos los paquetes y y nuevas dependencias que tengamos instalados 
 ```
 sudo apt update
 ```
-## Comandos básicos Python3
-Instalar Python3
-```
-sudo apt install python3.10
-```
 Verificar que esta instalado Python3:
 ```
 python3 --version
 python3 -V
 ```
-Si tenemos instalados múltiples versiones de Python, cambiar la version por defecto:
+## Comandos básicos Python3
+Instalar Python3
 ```
-update-alternatives --install /usr/bin/python3 python3 /usr/bin/python3.10 1
-update-alternatives --install /usr/bin/python3 python3 /usr/bin/python3.11 2
+sudo add-apt-repository ppa:deadsnakes/ppa
+sudo apt update
+sudo apt install python3.11
+```
+Listar las versiones instaladas:
+´´´
+ls -l /usr/bin/python*
+´´´
+Si tenemos instalados múltiples versiones de Python, indicar la version por defecto:
+```
+python3 --version
+sudo update-alternatives --install /usr/bin/python3 python3 /usr/bin/python3.10 1
+sudo update-alternatives --install /usr/bin/python3 python3 /usr/bin/python3.11 2
+sudo update-alternatives --config python3
+python3 --version
 ```
 ## Comandos básicos PIP3
 Instalar PIP3:
