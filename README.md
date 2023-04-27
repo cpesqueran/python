@@ -5,7 +5,8 @@ Repositorio de Python
 Se recomienda utilizar este comando antes de instalar programas o de actualizar el sistema.
 Actualizará todos los paquetes y y nuevas dependencias que tengamos instalados en nuestro equipo:
 ```
-sudo apt update
+sudo apt update #Actualizamos el sistema
+sudo apt upgrade #Aplicamos las actualizaciones
 ```
 Verificar que esta instalado Python3:
 ```
