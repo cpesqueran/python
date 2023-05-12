@@ -61,5 +61,6 @@ $ git config --global user.email cpesqueran@gmail.com
 # Referencias
 Sintaxis de escritura y formato básicos
 https://docs.github.com/es/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax
+
 Visual Studio Code y Github
 https://www.eniun.com/repositorio-git-visual-studio-code-github/
