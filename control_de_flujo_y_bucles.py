@@ -8,3 +8,6 @@ elif tipo == 'camion':
     ruedas = 6
 else:
     ruedas = -1
+
+print(ruedas)
+
