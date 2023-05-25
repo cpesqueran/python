@@ -2,7 +2,7 @@ print('Como te llamas?')
 cadena = input()
 print(f'Me llamo {cadena}')
 
-print('Como te llamas?: ', end='')
+print('Como te llamas (con end)?: ', end='')
 cadena = input()
 print(f'Me llamo {cadena}')
 
