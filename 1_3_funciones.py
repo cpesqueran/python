@@ -7,6 +7,7 @@ def suma():
 print(suma())
 
 print('\n----------Paso de parámetros----------')
+# En Python todos los argumentos son pasados por referencia
 def menor_valor(lst):
     return min(lst)
 
@@ -34,3 +35,14 @@ identificadores = extraer_identificadores(cadena_original, sep='<>')
 print(identificadores)
 id_modificados = aplicar_hash(identificadores)
 print(id_modificados)
+
+def division(num, deno=1): # Valor por defecto en deno
+    return num / deno
+
+# Los tipos están añadidos para cada variable y para el objeto que devuelve
+# la función
+def permutacion(num: int, veces: float) -> float:
+    return num * veces
+
+print(division(10, 2))
+print(permutacion(4, 2.0))
