@@ -62,12 +62,34 @@ A continuación, debemos definir nuestro usuario e email de la siguiente manera:
 $ git config --global user.name "Carlos Pesquera"
 $ git config --global user.email cpesqueran@gmail.com
 ```
+# Trabajar con entornos virtuales
+
+https://www.freecodecamp.org/espanol/news/entornos-virtuales-de-python-explicados-con-ejemplos/
+
 ## Instalar VIRTUALENV
 ```
 $ pip3 install virtualenv
-$ sudo apt-get install python3.xx-venv   >> reemplazar xx por la version de python
-$ python3 -m venv .\nombreDirectorio
+$ sudo apt-get install python3.xx-venv  >> reemplazar xx por la version de python
 ```
+## Comandos básicos en entornos virtuales
+Crear un entorno virtual
+```
+$ python3 -m venv .\comun               >> comun es el nombre del directorio
+```
+Activar un entorno virtual
+```
+$ source .comun/bin/activate
+```
+Desactivar un entorno virtual
+```
+$ deactivate
+```
+## Configuración del entorno virtual con requeriments.txt
+Debido a que los scripts instalados en entornos no deben esperar que el entorno se active, sus líneas shebang contienen las rutas absolutas a los intérpretes de su entorno. Debido a esto, de forma general, los entornos son inherentemente no portables. Siempre debemos tener un medio simple para recrear un entorno, esto se puede conseguir si tenemos un archivo de requisitos requirements.txt, que se puede puede invocar con:
+```
+$ pip3 install PACKAGE_NAME
+```
+usando el pip del entorno para instalar todos los paquetes que necesitemos. Si por algún motivo necesita mover el entorno a una nueva ubicación, debe volver a crearlo en la ubicación deseada y eliminar el de la ubicación anterior. Si mueve un entorno porque movió un directorio principal del mismo, debe volver a crear el entorno en su nueva ubicación. De lo contrario, es posible que el software instalado en el entorno no funcione como se esperaba.
 # Referencias
 Sintaxis de escritura y formato básicos
 https://docs.github.com/es/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax
