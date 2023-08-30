@@ -87,9 +87,10 @@ $ deactivate
 ## Configuración del entorno virtual con requeriments.txt
 Debido a que los scripts instalados en entornos no deben esperar que el entorno se active, sus líneas shebang contienen las rutas absolutas a los intérpretes de su entorno. Debido a esto, de forma general, los entornos son inherentemente no portables. Siempre debemos tener un medio simple para recrear un entorno, esto se puede conseguir si tenemos un archivo de requisitos requirements.txt, que se puede puede invocar con:
 ```
-$ pip3 install PACKAGE_NAME
+$ pip3 install -r requirements.txt
 ```
 usando el pip del entorno para instalar todos los paquetes que necesitemos. Si por algún motivo necesita mover el entorno a una nueva ubicación, debe volver a crearlo en la ubicación deseada y eliminar el de la ubicación anterior. Si mueve un entorno porque movió un directorio principal del mismo, debe volver a crear el entorno en su nueva ubicación. De lo contrario, es posible que el software instalado en el entorno no funcione como se esperaba.
+
 # Referencias
 Sintaxis de escritura y formato básicos
 https://docs.github.com/es/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax
