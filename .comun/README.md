@@ -3,7 +3,7 @@ Repositorio de Python
 
 # Comandos basicos de Sistema Operativo (Ubuntu)
 Se recomienda utilizar este comando antes de instalar programas o de actualizar el sistema.
-Actualizará todos los paquetes y y nuevas dependencias que tengamos instalados en nuestro equipo:
+Actualizará todos los paquetes y nuevas dependencias que tengamos instalados en nuestro equipo:
 ```
 $ sudo apt update #Actualizamos el sistema
 $ sudo apt upgrade #Aplicamos las actualizaciones
@@ -64,8 +64,6 @@ $ git config --global user.email cpesqueran@gmail.com
 ```
 # Trabajar con entornos virtuales
 
-https://www.freecodecamp.org/espanol/news/entornos-virtuales-de-python-explicados-con-ejemplos/
-
 ## Instalar VIRTUALENV
 ```
 $ pip3 install virtualenv
@@ -97,3 +95,6 @@ https://docs.github.com/es/get-started/writing-on-github/getting-started-with-wr
 
 Visual Studio Code y Github
 https://www.eniun.com/repositorio-git-visual-studio-code-github/
+
+Entornos virtuales
+https://www.freecodecamp.org/espanol/news/entornos-virtuales-de-python-explicados-con-ejemplos/

@@ -1,67 +1,83 @@
-# Repositorio Flask
-Repositorio de Flask
+# Aplicación FLASK y BD SQLite
 
-# Comandos basicos de Sistema Operativo (Ubuntu)
-Flask es un framework de Python que te permite desarrollar aplicaciones web. Está fundamentado en dos herramientas:
-Werkzeg WSGI toolkit
-Jinja2
+Creación de una aplicación Flask de inicio de sesión utilizando Flask-Login y Flask-SQLAlchemy.
+Utilizaremos SQLite como BD por su sencillez para almacenar los datos de Usuarios.
+
+# Requisitos previos
+Tener instalado:
+    - Python3 y PIP3
+    - Visual Studio Code y GIT (opcional)
+    - DB Browser for SQLite
+    - virtualenv (opcional pero recomendado)
+
+# Creación del entorno
+Crear un entorno virtual en el Terminal de VS Code
 ```
-$ sudo apt update #Actualizamos el sistema
-$ sudo apt upgrade #Aplicamos las actualizaciones
+$ python3 -m venv powerbi-management-app  >> nombre de la aplicación
 ```
-Verificar que esta instalado Python3:
+Activar un entorno virtual
 ```
-$ python3 --version
-$ python3 -V
+$ source powerbi-management-app/bin/activate
 ```
-## Comandos básicos Python3
-Instalar Python3
+Instalar los paquetes necesarios:
+    - Flask
+    - Flask-Login: para manejar las sesiones de usuario después de la autenticación
+    - Flask-SQLAlchemy: para representar el modelo de usuario y la interfaz con la base de datos
 ```
-$ sudo add-apt-repository ppa:deadsnakes/ppa
-$ sudo apt update
-$ sudo apt install python3.11
+(powerbi-management-app) $ pip3 install -r requirements.txt
 ```
-Listar las versiones instaladas:
+
+# Creación de carpetas y ficheros
+.
+└── powerbi-management-app
+    └── project
+        ├── __init__.py       # configura nuestra aplicación
+        ├── auth.py           # las rutas de autenticación para nuestra aplicación
+        ├── db.sqlite         # nuestra base de datos
+        ├── main.py           # the non-auth routes for our app
+        ├── models.py         # nuestros modelos
+        └── templates
+            ├── base.html     # contiene enlaces y diseños comunes
+            ├── index.html    # página de inicio
+            ├── login.html    # formulario de inicio de sesión
+            ├── profile.html  # página de perfil de usuario
+            └── signup.html   # formulario de registro
+
+# Establecer variables de entorno
 ```
-$ ls -l /usr/bin/python*
+(powerbi-management-app) $ export FLASK_APP=project
+(powerbi-management-app) $ export FLASK_DEBUG=1
 ```
-Si tenemos instalados múltiples versiones de Python, indicar la version por defecto:
+
+# Ejecutar la aplicación
+Desde un Terminal de VS Code, debemos asegurarnos que estamos dentro del directorio del proyecto, en este caso: powerbi-management-app
 ```
-$ python3 --version
-$ sudo update-alternatives --install /usr/bin/python3 python3 /usr/bin/python3.10 1
-$ sudo update-alternatives --install /usr/bin/python3 python3 /usr/bin/python3.11 2
-$ sudo update-alternatives --config python3
-$ python3 --version
+(powerbi-management-app) $ flask run
 ```
-## Comandos básicos PIP3
-Instalar PIP3:
+Visitar en el navegador
 ```
-$ sudo apt install python3-pip
+localhost:5000
 ```
-Verificar que esta instalado el gestor de paquetes para Python3:
+
+# Creación de la BD
+Nos creará la BD en el directorio
 ```
-$ pip3 --version
+
+var/project-instance con nombre db.sqlite
 ```
-¿Cómo instalar paquetes?
+Esta BD la abrimos con el DB Browser for SQLite para crear una tabla y sus campos con la siguiente definición:
 ```
-$ pip3 install PACKAGE_NAME
+CREATE TABLE "user" (
+	"id"	INTEGER,
+	"email"	TEXT UNIQUE,
+	"password"	TEXT,
+	"name"	TEXT,
+	PRIMARY KEY("id" AUTOINCREMENT)
+)
 ```
-## Instalar GIT en Visual Studio Code
-```
-$ sudo apt install git
-```
-Verificar que esta instalado correctamente consultando la versión:
-```
-$ git --version
-```
-A continuación, debemos definir nuestro usuario e email de la siguiente manera:
-```
-$ git config --global user.name "Carlos Pesquera"
-$ git config --global user.email cpesqueran@gmail.com
-```
+
+Ahora ya podemos ejecutar la aplicación sin problema.
+
 # Referencias
-Sintaxis de escritura y formato básicos
-https://docs.github.com/es/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax
 
-Visual Studio Code y Github
-https://www.eniun.com/repositorio-git-visual-studio-code-github/
+https://www.digitalocean.com/community/tutorials/how-to-add-authentication-to-your-app-with-flask-login#step-9-adding-the-login-method
